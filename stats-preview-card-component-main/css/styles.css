@@ -1,0 +1,162 @@
+html{
+    font-size: 15px;
+}
+
+body{
+    background-color:  hsl(233, 47%, 7%);
+    font-family: 'Inter',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+
+.card{
+    background-color: hsl(244, 38%, 16%);
+    margin:1rem;
+}
+
+.image {
+    position: relative;
+}
+
+.screen{
+    position: absolute;
+    top:0;
+    right:0;
+    bottom: 0;
+    left:0;
+    background-color: hsla(277, 80%, 45%,0.6);
+    
+    
+}
+.image img{
+    width:100%;
+    display:block;
+}
+
+.content{
+    padding:2rem 1.5rem;
+}
+
+.content .heading{
+    color:hsl(0, 0%, 100%);
+    text-align: center;
+    
+}
+
+.content br{
+    display: none;
+}
+
+.content p{
+    line-height: 1.5;
+    padding: 0 0.5rem;
+    text-align: center;
+}
+
+.heading span{
+    color:hsl(277, 64%, 61%);
+}
+
+
+
+.stat{
+    color:hsl(0, 0%, 100%);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+}
+
+.stat p{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color:hsla(0, 0%, 100%, 0.6);
+    margin-top:0.5rem;
+}
+
+
+@media screen and (min-width:768px) {
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+
+    .card {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        /* margin: 8rem 2vw; */
+    }
+
+    .image img{
+        object-fit: cover;
+    }
+    
+    .content{
+        grid-column: 1;
+        grid-row:1;
+        padding: 1rem;
+    }
+
+
+    .flex{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .content br{
+        display:inline;
+    }
+    .content h1,
+    .content p{
+        text-align: left;
+    }
+}
+
+@media screen and (min-width:1024px){
+
+    
+    .card{
+        max-width: 90%;
+   }
+    
+    .content{
+        max-width: 80%;
+        justify-self: center;
+        align-self: center;
+    }
+
+    h1{
+        font-size: 2.5rem;
+    }
+
+    .content p{
+        max-width: 90%;
+    }
+
+    .stats{
+        max-width: 80%;
+    }
+
+}
+
+@media screen and (min-width:1200px){
+    
+       
+    .card{
+        max-width: 80%;
+   }
+
+   .content p,
+   .stats {
+    max-width: 80%;
+}
+
+
+}
