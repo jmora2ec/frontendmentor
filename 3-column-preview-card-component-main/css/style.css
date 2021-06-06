@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lexend Deca", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 15px;
+}
+
+body {
+  display: flex;
+  place-content: center;
+  background-color: hsl(0, 0%, 95%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 7px;
+  overflow: hidden;
+  margin: 4rem 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 3rem 4rem 3rem;
+  max-width: 350px;
+  max-height: 600px;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+
+.card--sedans {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.card--suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.card--luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.card__heading {
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+  font-size: 2.5rem;
+  font-family: "Big Shoulders Display", cursive;
+}
+.card__content {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-weight: lighter;
+  line-height: 1.5;
+  width: 90%;
+  padding-bottom: 2vw;
+}
+
+.card__action button {
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 50px;
+  padding: 1rem 1rem;
+  border: none;
+  width: 150px;
+  cursor: pointer;
+}
+
+
+
+.card--sedans .card__action button {
+  color: hsl(31, 77%, 52%);
+  border:2px solid hsl(31, 77%, 52%);
+}
+
+.card--suvs .card__action button {
+  color: hsl(184, 100%, 22%);
+  border:2px solid hsl(184, 100%, 22%);
+}
+
+.card--luxury .card__action button {
+  color: hsl(179, 100%, 13%);
+  border:2px solid hsl(179, 100%, 13%);
+}
+
+.card--sedans .card__action button:hover,
+.card--suvs .card__action button:hover,
+.card--luxury .card__action button:hover
+{
+    color: hsla(0, 0%, 100%, 0.75);
+    border:2px solid hsla(0, 0%, 100%, 0.75);
+}
+
+.card--sedans .card__action button:hover{
+    background-color: hsl(31, 77%, 52%);
+}
+.card--suvs .card__action button:hover{
+
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card--luxury .card__action button:hover{
+    background-color: hsl(179, 100%, 13%);
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    height: 100vh;
+  }
+
+  .container {
+    flex-direction: row;
+    align-items: flex-start;
+    margin: auto;
+  }
+  .card {
+    height: 520px;
+    max-width: 320px;
+  }
+}
+
+@media screen and(min-width:1024) {
+  .card {
+    padding: 4rem 4rem 4rem 4rem;
+  }
+}
