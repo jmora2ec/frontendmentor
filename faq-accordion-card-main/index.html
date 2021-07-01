@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-image">
+        <div class="top-image">
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcset="images/illustration-woman-online-mobile.svg" />
+            <source
+              media="(min-width: 768px)"
+              srcset="images/illustration-woman-online-desktop.svg" />
+            <img
+              src="images/illustration-woman-online-mobile.svg"
+              alt="illustration women"
+          /></picture>
+        </div>
+        <div class="top-image-shadow">
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcset="images/bg-pattern-mobile.svg"
+            />
+            <source
+                media="(min-width:768px)"
+                srcset="images/bg-pattern-desktop.svg">
+            <img src="images/bg-pattern-mobile.svg" alt="illustration shadow" />
+          </picture>
+        </div>
+      </div>
+      <div class="card-content">
+        <h1 class="card-heading">FAQ</h1>
+        <div class="collapsible collapsible-expanded">
+          <div class="collapsible-head flex">
+            How many team members can I invite?
+            <span class="collapsible-icon"
+              ><img src="images/icon-arrow-down.svg" alt=""
+            /></span>
+          </div>
+          <div class="collapsible-content flex">
+            You can invite up to 2 additional users on the Free plan. There is
+            no limit on team members for the Premium plan.
+          </div>
+        </div>
+        <div class="collapsible">
+          <div class="collapsible-head flex">
+            What is the maximum file upload size?
+            <span class="collapsible-icon"
+              ><img src="images/icon-arrow-down.svg" alt=""
+            /></span>
+          </div>
+          <div class="collapsible-content">
+            No more than 2GB. All files in your account must fit your allotted
+            storage space.
+          </div>
+        </div>
+        <div class="collapsible">
+          <div class="collapsible-head flex">
+            How do I reset my password?
+            <span class="collapsible-icon"
+              ><img src="images/icon-arrow-down.svg" alt=""
+            /></span>
+          </div>
+          <div class="collapsible-content">
+            Click “Forgot password” from the login page or “Change password”
+            from your profile page. A reset link will be emailed to you.
+          </div>
+        </div>
+        <div class="collapsible">
+          <div class="collapsible-head flex">
+            Can I cancel my subscription?
+            <span class="collapsible-icon"
+              ><img src="images/icon-arrow-down.svg" alt=""
+            /></span>
+          </div>
+          <div class="collapsible-content">
+            Yes! Send us a message and we’ll process your request no questions
+            asked.
+          </div>
+        </div>
+        <div class="collapsible">
+          <div class="collapsible-head flex">
+            Do you provide additional support?
+            <span class="collapsible-icon"
+              ><img src="images/icon-arrow-down.svg" alt=""
+            /></span>
+          </div>
+          <div class="collapsible-content">
+            Chat and email support is available 24/7. Phone lines are open
+            during normal business hours.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

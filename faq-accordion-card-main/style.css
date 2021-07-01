@@ -1,0 +1,136 @@
+html {
+  font-family: "Kumbh Sans", sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 12px;
+}
+
+body{
+    background:linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.card{
+    
+    margin:12rem auto;
+    background-color:#fff;
+    border-radius: 20px;
+    padding: 4rem 1rem;
+    max-width: 300px;
+    position: relative;
+
+
+}
+
+.top-image{
+    position: absolute;
+    top:-108px;
+    left:17px;
+
+}
+.top-image-shadow{
+    position:absolute;
+    top:0;
+    left:45px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.card-heading{
+    margin-top:7rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    
+}
+.collapsible {
+    padding: 1.6rem;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+.collapsible-head {
+  color: hsl(240, 6%, 50%);
+  font-weight: 400;
+}
+
+.collapsible-icon {
+  cursor: pointer;
+}
+.collapsible-icon img{
+    transform: rotate(0);
+}
+
+.collapsible-head:hover {
+  color:#F47B56;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.collapsible-content {
+  color: hsl(240, 6%, 50%);
+  display: none;
+  max-width: 90%;
+  padding-top: 1rem;
+
+}
+
+.collapsible-expanded .collapsible-head{
+    color: hsl(237, 12%, 33%);
+    font-weight: 700;
+}
+
+.collapsible-expanded .collapsible-content{
+    display: block;
+}
+
+.collapsible-expanded .collapsible-icon img{
+    transform: rotate(180deg);
+}
+
+@media screen and (min-width:768px) {
+
+    .card{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 920px;
+        margin: 6rem auto;
+        padding:0;
+        max-height: 510px;
+        overflow: hidden;;
+        
+    }
+
+    .card-content{
+        padding: 4rem 8rem 4rem 0;
+    }
+
+    .card-heading{
+        margin: 0;
+        padding: 1rem 2rem ;
+        text-align: left;
+    }
+    
+    .top-image{
+        top:50px;
+        left:-80px;
+        z-index: 2;
+    }
+    .top-image-shadow{
+        left:-600px;
+        top:-300px;
+    }
+
+    
+}
+
+
+
