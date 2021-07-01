@@ -108,6 +108,7 @@ body{
         margin: 6rem auto;
         padding:0;
         max-height: 510px;
+        top:15%;
         
     }
 
@@ -118,7 +119,7 @@ body{
     }
 
     .card-content{
-        padding: 4rem 8rem 4rem 0;
+        padding: 6rem 8rem 6rem 0;
     }
 
     .card-heading{
