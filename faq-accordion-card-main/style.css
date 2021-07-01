@@ -19,16 +19,15 @@ body{
 
 
 .card{
-    
     margin:12rem auto;
     background-color:#fff;
     border-radius: 20px;
     padding: 4rem 1rem;
     max-width: 300px;
     position: relative;
-
-
 }
+
+
 
 .top-image{
     position: absolute;
@@ -96,6 +95,10 @@ body{
     transform: rotate(180deg);
 }
 
+.box-image{
+    display: none;
+}
+
 @media screen and (min-width:768px) {
 
     .card{
@@ -105,8 +108,13 @@ body{
         margin: 6rem auto;
         padding:0;
         max-height: 510px;
-        overflow: hidden;;
         
+    }
+
+    .card-image{
+        position: relative;
+        overflow:hidden;
+    
     }
 
     .card-content{
@@ -127,6 +135,15 @@ body{
     .top-image-shadow{
         left:-600px;
         top:-300px;
+    }
+
+    .box-image{
+        display: block;
+        position:absolute;
+        top:180px;
+        z-index:3;
+        left:-92px;
+      
     }
 
     
