@@ -1,0 +1,100 @@
+:root {
+  font-size: 15px;
+  font-family: "Spartan", sans-serif;
+}
+
+.social-proof {
+  max-width: 375px;
+  margin: auto;
+  position: relative;
+  padding: 2rem 2rem;
+}
+
+.container {
+  padding: 1.4rem 0;
+}
+
+.top-background {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.bottom-background {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+
+.social-proof .heading h1 {
+  text-align: center;
+  font-size: 2.4rem;
+  color: hsl(300, 43%, 22%);
+  padding: 0 2rem;
+}
+
+.social-proof .heading p {
+  text-align: center;
+  color: hsl(303, 10%, 53%);
+  font-weight: 700;
+  line-height: 2;
+}
+
+.rate-cards {
+  padding: 1rem 0;
+}
+
+.rate-card {
+  padding: 1rem;
+  margin: 1rem auto;
+  text-align: center;
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 12px;
+}
+
+.rate-stars {
+  margin-bottom: 1rem;
+}
+
+
+.review-card {
+  background-color: hsl(300, 43%, 22%);
+  padding: 2.2rem;
+  margin: 1rem auto;
+  border-radius: 12px;
+}
+
+.content p {
+  color: hsl(300, 24%, 96%);
+  text-align: left;
+  line-height: 2;
+}
+
+.media .reviewer {
+  color: #fff;
+  font-weight: 500;
+}
+.media .reviewer-type {
+  color: hsl(333, 80%, 67%);
+  font-weight: 400;
+}
+
+.flex {
+  display: flex;
+}
+
+.media-image img {
+  border-radius: 50%;
+  width: 70%;
+}
+.media-title {
+  align-self: center;
+  padding-left: 0rem;
+}
+
+.media-title .reviewer-type {
+  margin-top: 0.5rem;
+}
