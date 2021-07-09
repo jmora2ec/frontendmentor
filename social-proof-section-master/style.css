@@ -1,13 +1,20 @@
 :root {
   font-size: 15px;
   font-family: "Spartan", sans-serif;
+  box-sizing: border-box;
+}
+
+.social-section{
+    position: relative;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .social-proof {
   max-width: 375px;
   margin: auto;
   position: relative;
-  padding: 2rem 2rem;
+  padding: 2rem 0.4rem;
 }
 
 .container {
@@ -17,27 +24,31 @@
 .top-background {
   position: absolute;
   top: 0;
-  width: 100%;
+  left: 0;
+
 }
 
 .bottom-background {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 100%;
+
+ 
 }
 
 .social-proof .heading h1 {
   text-align: center;
   font-size: 2.4rem;
   color: hsl(300, 43%, 22%);
-  padding: 0 2rem;
+  padding: 0 1rem;
+  font-weight: 700;
+
 }
 
 .social-proof .heading p {
   text-align: center;
   color: hsl(303, 10%, 53%);
-  font-weight: 700;
+  font-weight: 500;
   line-height: 2;
 }
 
@@ -46,7 +57,7 @@
 }
 
 .rate-card {
-  padding: 1rem;
+  padding: 0.4rem;
   margin: 1rem auto;
   text-align: center;
   color: hsl(300, 43%, 22%);
@@ -56,7 +67,7 @@
 }
 
 .rate-stars {
-  margin-bottom: 1rem;
+  margin: 1rem;
 }
 
 
@@ -88,7 +99,7 @@
 
 .media-image img {
   border-radius: 50%;
-  width: 70%;
+  width: 60%;
 }
 .media-title {
   align-self: center;
@@ -97,4 +108,90 @@
 
 .media-title .reviewer-type {
   margin-top: 0.5rem;
+}
+
+
+@media screen and (min-width:768px){
+    .social-proof {
+        max-width: 1440px;
+        font-size: 13px;
+        padding: 3rem 1rem;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        max-width: 1110px;
+        margin: auto;
+        align-items: center;
+        row-gap: 3rem;
+        
+    }
+
+    .heading{
+        max-width: 75%;
+    }
+    .social-proof .heading h1,
+    .social-proof .heading p{
+        text-align: left;
+    }
+
+    .social-proof .heading h1{
+        font-size: 3rem;
+        padding-left: 0;
+        line-height: 1;
+    }
+
+    .rate-cards{
+        grid-column: 2;
+        justify-content: left;
+        position: relative;
+        width: 100%;
+    }
+
+    .rate-card{
+        display: flex;
+        max-width: 440px;
+        justify-self: left;
+        align-items: center;
+        margin-left: 0;
+    
+    }
+
+    .rate-stars{
+        margin: 0 1rem;
+    }
+
+    .rate-cards .rate-card:nth-child(2){
+        margin-left:8% ;
+    }
+
+    .rate-cards .rate-card:nth-child(3){
+        margin-left:16% ;
+    }
+
+    .review-cards{
+        display: flex;
+        grid-row:2 ;
+        grid-column: span 2;
+        justify-content: space-between;
+        align-items: flex-start;
+     
+    }
+
+    .review-card{
+        max-width: 284px;
+        margin: 0;
+    }
+
+    .review-cards .review-card:nth-child(2){
+        margin-top:2rem;
+    
+    }
+    .review-cards .review-card:nth-child(3){
+        margin-top:3rem;
+    }
+
+
+
 }

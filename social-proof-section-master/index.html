@@ -22,23 +22,26 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section>
+    <section class="social-section">
+      <div class="top-background">
+        <picture>
+            <source media="(max-width:767px)" srcset="images/bg-pattern-top-mobile.svg">
+            <source media="(min-width:768px)" srcset="images/bg-pattern-top-desktop.svg">
+            <img src="" alt="" />
+        </picture>
+      </div>
+      <div class="bottom-background">
+        <picture>
+            <source media="(max-width:767px)" srcset="images/bg-pattern-bottom-mobile.svg">
+            <source media="(min-width:768px)" srcset="images/bg-pattern-bottom-desktop.svg">
+            <img src="" alt="" /></picture>
+      </div>
       <div class="social-proof">
-        <div class="top-background">
-          <img src="images/bg-pattern-top-mobile.svg" alt="" />
-        </div>
-        <div class="bottom-background">
-          <img src="images/bg-pattern-bottom-mobile.svg" alt="" />
-        </div>
-
-        <div class="container">
+        <div class="container grid">
           <div class="heading">
             <h1>10,000+ of our users love our products.</h1>
-            <p>
-              We only provide great products combined with excellent customer
-              service. See what our satisfied customers are saying about our
-              services.
-            </p>
+            <p>We only provide great products combined with excellent customer
+              service. See what our satisfied customers are saying about our services.</p>
           </div>
           <div class="rate-cards">
             <div class="rate-card">
@@ -49,7 +52,7 @@
                 <span><img src="images/icon-star.svg" alt="star icon" /></span>
                 <span><img src="images/icon-star.svg" alt="star icon" /></span>
               </div>
-              Rated 5 Stars in Reviews
+              <p>Rated 5 Stars in Reviews</p>
             </div>
             <div class="rate-card">
               <div class="rate-stars">
@@ -59,7 +62,7 @@
                 <span><img src="images/icon-star.svg" alt="star icon" /></span>
                 <span><img src="images/icon-star.svg" alt="star icon" /></span>
               </div>
-              Rated 5 Stars in Report Guru
+              <p>Rated 5 Stars in Report Guru</p>
             </div>
             <div class="rate-card">
               <div class="rate-stars">
@@ -69,7 +72,7 @@
                 <span><img src="images/icon-star.svg" alt="star icon" /></span>
                 <span><img src="images/icon-star.svg" alt="star icon" /></span>
               </div>
-              Rated 5 Stars in BestTech
+              <p>Rated 5 Stars in BestTech</p>
             </div>
           </div>
           <div class="review-cards">
