@@ -1,0 +1,26 @@
+$carousel-control-opacity: 0.8;
+
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  background-size: 25%;
+  border-radius: 50%;
+}
+
+.carousel-control-next-icon {
+  background-image: url('../../assets/images/icon-next.svg');
+}
+.carousel-control-prev-icon {
+  background-image: url('../../assets/images/icon-previous.svg');
+}
+
+.carousel-item {
+  max-height: 300px;
+}
