@@ -21,11 +21,14 @@ const Navbar = (props) => {
         onClick={handleClick}
       />
       <div className="logo">sneakers</div>
+      <Menu active={menuActive} />
       <div className="widgets">
-        <ShoppingCartIcon onClick={props.showCartHandle} />
+        <ShoppingCartIcon
+          onClick={props.showCartHandle}
+          items={props.totalItems}
+        />
         <UserIcon />
       </div>
-      <Menu active={menuActive} />
     </div>
   );
 };

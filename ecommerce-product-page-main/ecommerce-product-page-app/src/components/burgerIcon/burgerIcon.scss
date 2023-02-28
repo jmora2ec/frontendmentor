@@ -29,3 +29,9 @@
 .burger-button.open .middle {
   opacity: 0;
 }
+
+@media screen and (min-width: 1023px) {
+  .burger-button {
+    display: none;
+  }
+}

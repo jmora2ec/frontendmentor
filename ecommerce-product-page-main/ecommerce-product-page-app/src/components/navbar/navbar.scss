@@ -1,7 +1,6 @@
 .nav-bar {
   display: flex;
   align-items: center;
-  padding-inline: 1.8rem;
   padding-block: 1.8rem;
 
   .logo {
@@ -17,5 +16,13 @@
     gap: 2rem;
     margin-left: auto;
     margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .nav-bar {
+    border-bottom: 1px solid hsl(240, 2%, 84%);
+    margin-bottom: 4rem;
+    padding-block: 0;
   }
 }

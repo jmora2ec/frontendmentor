@@ -7,11 +7,20 @@ import './product.scss';
 import '../app.scss';
 
 const Product = (props) => {
-  const { id, images, name, price, regularPrice, discount, description } =
-    props.product;
+  const {
+    id,
+    images,
+    thumbnails,
+    name,
+    price,
+    regularPrice,
+    discount,
+    description,
+  } = props.product;
   const [itemCart, setItemCart] = useState({
     productId: id,
     image: images[0],
+    thumbnail: thumbnails[0],
     name: name,
     price: price,
     description: description,
@@ -36,7 +45,9 @@ const Product = (props) => {
 
   return (
     <div className="product">
-      <Slides images={images} />
+      <div className="slides">
+        <Slides images={images} thumbnails={thumbnails} />
+      </div>
 
       <div className="product__details">
         <div className="header">sneaker company</div>
@@ -59,7 +70,11 @@ const Product = (props) => {
           addItem={addItem}
           removeItem={removeItem}
         />
-        <AddToCart onClick={() => props.addToCart(itemCart)} />
+        <AddToCart
+          onClick={() => {
+            props.addToCart(itemCart);
+          }}
+        />
       </div>
     </div>
   );

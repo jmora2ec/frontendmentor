@@ -12,5 +12,11 @@
   .counter__add {
     padding: 1rem;
     z-index: 2;
+    cursor: pointer;
+  }
+
+  .counter__remove:hover,
+  .counter__add:hover {
+    opacity: 0.8;
   }
 }
