@@ -72,7 +72,7 @@ img {
   opacity: 1;
   background-color: white;
   width: calc(100% - 4rem);
-  border-top: 25px solid hsl(203deg, 100%, 68%);
+  border-top: 25px solid hsl(203, 100%, 68%);
   border-right: 25px solid white;
   border-left: none;
   display: flex;
@@ -84,7 +84,7 @@ img {
   padding-left: 25px;
   height: auto;
   min-height: 50vh;
-  color: hsl(232deg, 10%, 55%);
+  color: hsl(232, 10%, 55%);
   font-weight: 500;
   font-size: 2rem;
   opacity: 0;
@@ -209,18 +209,18 @@ main img {
   padding-inline: 2rem;
   font-family: "Fraunces";
   font-size: 3.4rem;
-  color: hsl(212deg, 27%, 19%);
+  color: hsl(212, 27%, 19%);
   line-height: 1.2;
 }
 .section .content p {
   font-family: "Barlow";
   font-weight: 500;
   line-height: 1.6;
-  color: hsl(232deg, 10%, 55%);
+  color: hsl(232, 10%, 55%);
 }
 .section .content p:nth-of-type(2) {
   font-family: "Fraunces";
-  color: hsl(212deg, 27%, 19%);
+  color: hsl(212, 27%, 19%);
   text-transform: uppercase;
 }
 
@@ -245,7 +245,7 @@ main img {
 }
 .section-graphic .content {
   text-align: center;
-  color: hsl(167deg, 40%, 24%);
+  color: hsl(167, 40%, 24%);
 }
 .section-graphic .content h2 {
   font-size: 3rem;
@@ -257,7 +257,7 @@ main img {
 }
 
 .section-photo {
-  color: hsl(198deg, 62%, 26%);
+  color: hsl(198, 62%, 26%);
   background-image: url(./images/mobile/image-photography.jpg);
   height: 160vw;
   background-size: 100%;
@@ -278,11 +278,11 @@ main img {
 
 .testimonials {
   text-align: center;
-  color: hsl(213deg, 9%, 39%);
+  color: hsl(213, 9%, 39%);
   padding-block: 6rem 10rem;
 }
 .testimonials h2 {
-  color: hsl(210deg, 4%, 67%);
+  color: hsl(210, 4%, 67%);
   font-family: "Fraunces";
   text-transform: uppercase;
   font-size: 1.6rem;
@@ -314,13 +314,13 @@ main img {
 }
 .testimonials .testimonial .footer .name {
   font-family: "Fraunces";
-  color: hsl(212deg, 27%, 19%);
+  color: hsl(212, 27%, 19%);
 }
 .testimonials .testimonial .footer .title {
   margin-top: 0.8rem;
   font-size: 1.4rem;
   font-weight: 500;
-  color: hsl(210deg, 4%, 67%);
+  color: hsl(210, 4%, 67%);
 }
 
 .gallery {
@@ -330,8 +330,8 @@ main img {
 
 footer {
   padding-block: 5rem;
-  background-color: hsl(167deg, 45%, 70%);
-  color: hsl(168deg, 43%, 32%);
+  background-color: hsl(167, 45%, 70%);
+  color: hsl(168, 43%, 32%);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -349,7 +349,7 @@ footer .navbar {
   flex-direction: row;
   padding-block: 3.4rem;
   justify-content: space-between;
-  color: hsl(168deg, 34%, 41%);
+  color: hsl(168, 34%, 41%);
 }
 footer .navbar a:visited,
 footer .navbar a:active,
