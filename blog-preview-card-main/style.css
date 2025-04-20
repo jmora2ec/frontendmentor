@@ -1,0 +1,17 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, sans-serif; /* Replace with your preferred font */
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
